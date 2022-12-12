@@ -42,15 +42,14 @@ button:hover {
   list-style: none;
 }
 .section {
-  padding: 94px 0;
-  align-content: center;
+  padding: 94px 0px;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 /* Top of the page */
+.header {
+  border-bottom: 1px solid var(--line-color);
+  background-color: var(--secondary-color);
+  display: flex;
+}
 .webstudio {
   font-family: 'Raleway';
   font-style: normal;
@@ -59,15 +58,13 @@ button:hover {
   line-height: 1.2;
   color: var(--deep-black);
   text-decoration: none;
-}
-.header {
-  background-color: var(--secondary-color);
-  border-bottom: 1px solid var(--line-color);
   padding: 24px;
-  display: inline-flex;
 }
 .blue-studio {
   color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
 }
 .social-links {
   font-weight: 500;
@@ -75,22 +72,29 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  display: inline-flex;
   justify-content: space-between;
 }
 .contact-links {
   color: var(--light-gray);
+  justify-content: space-between;
 }
 .social-links:visited {
   color: inherit;
 }
 .social-links:hover,
 .map-link:hover,
-.gray-social-links:hover {
+.gray-social-links:hover,
+.social-links:focus,
+.map-link:focus,
+.gray-social-links:focus {
   color: var(--accent-color);
 }
 .social-links.current {
   color: var(--accent-color);
+}
+.nav-list li {
+  padding-top: 32px;
+  margin-right: 43px;
 }
 /* End top of the page */
 
@@ -98,6 +102,9 @@ button:hover {
 .first-section {
   background-color: var(--background-header-footer-color);
   align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .primary-header {
   font-size: 44px;
@@ -108,7 +115,7 @@ button:hover {
   text-transform: uppercase;
   text-align: center;
   max-width: 696px;
-  align-content: center;
+  padding-top: 200px;
 }
 .service {
   background-color: var(--accent-color);
@@ -124,6 +131,8 @@ button:hover {
   cursor: pointer;
   font-family: inherit;
   padding: 10px 41px;
+  justify-content: center;
+  align-items: center;
 }
 /* End header */
 
@@ -133,7 +142,6 @@ button:hover {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-  padding-top: 94px;
 }
 .small-paragraphs {
   line-height: 1.7;
@@ -193,9 +201,13 @@ button:hover {
   letter-spacing: 0.03em;
   line-height: 1.6;
   color: var(--main-text-color);
-  margin: 4px;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 0 8px;
+  display: flex;
 }
-.filters:hover {
+.filters:hover,
+.filters:focus {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -206,7 +218,7 @@ button:hover {
 /* Projects section */
 .project-cards {
   border-bottom: 1px var(--card-border-color) solid;
-  margin: 15px;
+  justify-content: center;
 }
 .project-names {
   font-weight: 700;
@@ -239,10 +251,16 @@ button:hover {
 /* Footer */
 .footer {
   background-color: var(--background-header-footer-color);
-  padding: 60px 215px;
+  padding: 60px 15px;
 }
 .white-studio {
   color: var(--secondary-color);
+}
+.footer-logo {
+  padding-left: 0;
+}
+.address {
+  margin-top: 20px;
 }
 .footer-social-links {
   font-style: normal;
@@ -256,3 +274,8 @@ button:hover {
   color: var(--secondary-color-transparent);
 }
 /* End footer */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

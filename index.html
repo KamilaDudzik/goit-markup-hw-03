@@ -24,15 +24,17 @@
     <!-- Top of the page -->
     <header class="header">
       <div class="container">
-        <a href="index.html" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
-        <ul class="lists">
-          <li><a href="#" class="social-links current">Agencja</a></li>
-          <li><a href="./portfolio.html" class="social-links">Portfolio</a></li>
-          <li><a href="#" class="social-links">Kontakt</a></li>
-        </ul>
+        <nav class="nav-list">
+          <a href="index.html" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
+          <ul class="lists nav-list">
+            <li><a href="#" class="social-links current">Agencja</a></li>
+            <li><a href="./portfolio.html" class="social-links">Portfolio</a></li>
+            <li><a href="#" class="social-links">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="container">
-        <ul class="lists">
+        <ul class="lists nav-list">
           <li>
             <a href="mailto:info@devstudio.com" class="social-links contact-links"
               >info@devstudio.com</a
@@ -151,11 +153,11 @@
     </main>
     <footer class="footer">
       <!-- Footer -->
-      <address>
-        <div class="container">
-          <a href="index.html" class="webstudio"
-            ><span class="blue-studio">Web</span><span class="white-studio">Studio</span></a
-          >
+      <div class="container">
+        <a href="index.html" class="webstudio footer-logo"
+          ><span class="blue-studio">Web</span><span class="white-studio">Studio</span></a
+        >
+        <address class="address">
           <ul class="lists">
             <li>
               <a
@@ -176,8 +178,8 @@
               >
             </li>
           </ul>
-        </div>
-      </address>
+        </address>
+      </div>
       <!-- End footer -->
     </footer>
   </body>
