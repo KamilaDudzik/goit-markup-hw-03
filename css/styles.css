@@ -22,6 +22,40 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,20 +69,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-button:hover {
-  cursor: pointer;
-}
-.lists {
-  list-style: none;
-}
-.section {
-  padding: 94px 0px;
-}
 /* Top of the page */
-.header {
-  border-bottom: 1px solid var(--line-color);
-  background-color: var(--secondary-color);
+.header-wrap {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line-color);
 }
 .webstudio {
   font-family: 'Raleway';
@@ -58,13 +83,29 @@ button:hover {
   line-height: 1.2;
   color: var(--deep-black);
   text-decoration: none;
-  padding: 24px;
+  padding: 24px 0;
 }
 .blue-studio {
   color: var(--accent-color);
 }
 .nav-list {
+  margin-left: auto;
   display: flex;
+  align-items: center;
+}
+.nav-list:not(:last-child) {
+  margin-right: 43px;
+}
+.links-list {
+  margin-left: 94px;
+  margin-right: 371px;
+  gap: 0 46px;
+  display: flex;
+}
+.contact-list {
+  margin-left: 0;
+  display: flex;
+  gap: 50px;
 }
 .social-links {
   font-weight: 500;
@@ -72,11 +113,9 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  justify-content: space-between;
 }
 .contact-links {
   color: var(--light-gray);
-  justify-content: space-between;
 }
 .social-links:visited {
   color: inherit;
@@ -92,19 +131,13 @@ button:hover {
 .social-links.current {
   color: var(--accent-color);
 }
-.nav-list li {
-  padding-top: 32px;
-  margin-right: 43px;
-}
 /* End top of the page */
 
 /* Header */
 .first-section {
   background-color: var(--background-header-footer-color);
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 200px 0;
+  text-align: center;
 }
 .primary-header {
   font-size: 44px;
@@ -114,8 +147,9 @@ button:hover {
   color: var(--secondary-color);
   text-transform: uppercase;
   text-align: center;
-  max-width: 696px;
-  padding-top: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 696px;
 }
 .service {
   background-color: var(--accent-color);
@@ -126,13 +160,13 @@ button:hover {
   text-align: center;
   letter-spacing: 0.06em;
   border: none;
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-family: inherit;
   padding: 10px 41px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 /* End header */
 
@@ -142,10 +176,12 @@ button:hover {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .small-paragraphs {
   line-height: 1.7;
   color: var(--light-gray);
+  margin-bottom: 94px;
 }
 /* End paragraphs section */
 
@@ -194,7 +230,6 @@ button:hover {
 .filters {
   background-color: var(--very-light-gray-background);
   border: none;
-  border-radius: 4px;
   padding: 6px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -203,8 +238,6 @@ button:hover {
   color: var(--main-text-color);
   margin-bottom: 50px;
   justify-content: center;
-  gap: 0 8px;
-  display: flex;
 }
 .filters:hover,
 .filters:focus {
@@ -212,6 +245,11 @@ button:hover {
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filters-list {
+  justify-content: center;
+  gap: 0 8px;
+  display: flex;
 }
 /* End buttons section */
 
@@ -259,8 +297,15 @@ button:hover {
 .footer-logo {
   padding-left: 0;
 }
-.address {
+address {
   margin-top: 20px;
+  font-style: normal;
+}
+.footer-list {
+  gap: 9px;
+}
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-social-links {
   font-style: normal;
@@ -274,8 +319,3 @@ button:hover {
   color: var(--secondary-color-transparent);
 }
 /* End footer */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}

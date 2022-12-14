@@ -22,26 +22,26 @@
   </head>
   <body>
     <!-- Top of the page -->
-    <header class="header">
+    <header class="header-wrap">
       <div class="container">
         <nav class="nav-list">
           <a href="index.html" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
-          <ul class="lists nav-list">
+          <ul class="links-list">
             <li><a href="#" class="social-links">Agencja</a></li>
             <li><a href="./portfolio.html" class="social-links current">Portfolio</a></li>
             <li><a href="#" class="social-links">Kontakt</a></li>
           </ul>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="social-links contact-links"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="social-links contact-links">+48 111 111 111</a>
+            </li>
+          </ul>
         </nav>
-      </div>
-      <div class="container">
-        <ul class="lists nav-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="social-links contact-links"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li><a href="tel:+48111111111" class="social-links contact-links">+48 111 111 111</a></li>
-        </ul>
       </div>
       <!-- End top of the page -->
     </header>
@@ -50,7 +50,7 @@
       <section class="section">
         <h1 class="visually-hidden">Something to hide</h1>
         <div class="container">
-          <ul class="lists flex">
+          <ul class="filters-list">
             <li><button type="button" class="filters">Wszystkie</button></li>
             <li><button type="button" class="filters">Strony</button></li>
             <li><button type="button" class="filters">Aplikacje</button></li>
@@ -61,7 +61,7 @@
         <!-- End button section -->
         <!-- Projects section -->
         <div class="container">
-          <ul class="lists flex-wrap">
+          <ul class="flex-wrap">
             <li>
               <figure class="project-cards">
                 <img src="images/Technocrack.jpg" alt="Website" width="370" />
@@ -166,14 +166,12 @@
     </main>
     <footer class="footer">
       <!-- Footer -->
-      <address>
-        <div class="container">
-          <a href="index.html" class="webstudio"
-            ><span class="blue-studio">Web</span><span class="white-studio">Studio</span></a
-          >
-        </div>
-        <div class="container">
-          <ul class="lists">
+      <div class="container">
+        <a href="index.html" class="webstudio footer-logo"
+          ><span class="blue-studio">Web</span><span class="white-studio">Studio</span></a
+        >
+        <address>
+          <ul class="footer-list">
             <li>
               <a
                 href="https://goo.gl/maps/FoN4GqAtt9caBdG7A"
@@ -193,8 +191,8 @@
               >
             </li>
           </ul>
-        </div>
-      </address>
+        </address>
+      </div>
       <!-- End footer -->
     </footer>
   </body>

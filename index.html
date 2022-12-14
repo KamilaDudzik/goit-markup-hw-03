@@ -22,26 +22,26 @@
   </head>
   <body>
     <!-- Top of the page -->
-    <header class="header">
+    <header class="header-wrap">
       <div class="container">
         <nav class="nav-list">
           <a href="index.html" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
-          <ul class="lists nav-list">
+          <ul class="links-list">
             <li><a href="#" class="social-links current">Agencja</a></li>
             <li><a href="./portfolio.html" class="social-links">Portfolio</a></li>
             <li><a href="#" class="social-links">Kontakt</a></li>
           </ul>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="social-links contact-links"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="social-links contact-links">+48 111 111 111</a>
+            </li>
+          </ul>
         </nav>
-      </div>
-      <div class="container">
-        <ul class="lists nav-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="social-links contact-links"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li><a href="tel:+48111111111" class="social-links contact-links">+48 111 111 111</a></li>
-        </ul>
       </div>
       <!-- End top of the page -->
     </header>
@@ -58,7 +58,7 @@
         <!-- Paragraphs section -->
         <div class="container">
           <h2 class="visually-hidden">Something to hide</h2>
-          <ul class="lists flex">
+          <ul class="flex">
             <li>
               <h3 class="small-headers">Lorem ipsum</h3>
               <p class="small-paragraphs">
@@ -90,12 +90,11 @@
           </ul>
         </div>
         <!-- End paragraphs section -->
-      </section>
-      <section class="section">
+
         <!-- 'What we do' section -->
         <div class="container">
           <h2 class="secondary-headers">Czym się zajmujemy?</h2>
-          <ul class="lists flex">
+          <ul class="flex">
             <li><img src="images/keyboard.jpg" alt="Keyboard" width="370" /></li>
             <li><img src="images/phone.jpg" alt="Phone" width="370" /></li>
             <li><img src="images/ipad.jpg" alt="iPad" width="370" /></li>
@@ -107,7 +106,7 @@
         <!-- 'Our team' section -->
         <div class="container">
           <h2 class="secondary-headers">Nasz zespół</h2>
-          <ul class="lists flex">
+          <ul class="flex">
             <li>
               <figure class="people-cards">
                 <img src="images/productdesigner.jpg" alt="Product designer" width="270" />
@@ -157,8 +156,8 @@
         <a href="index.html" class="webstudio footer-logo"
           ><span class="blue-studio">Web</span><span class="white-studio">Studio</span></a
         >
-        <address class="address">
-          <ul class="lists">
+        <address>
+          <ul class="footer-list">
             <li>
               <a
                 href="https://goo.gl/maps/FoN4GqAtt9caBdG7A"
