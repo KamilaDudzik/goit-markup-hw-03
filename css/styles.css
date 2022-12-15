@@ -181,7 +181,6 @@ button {
 .small-paragraphs {
   line-height: 1.7;
   color: var(--light-gray);
-  margin-bottom: 94px;
 }
 /* End paragraphs section */
 
@@ -192,7 +191,10 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.paragraphs-section {
+  padding-bottom: 0;
 }
 /* End 'what we do' section */
 
@@ -200,12 +202,14 @@ button {
 .our-team-section {
   background-color: var(--very-light-gray-background);
 }
+.people-box {
+  padding: 30px 0;
+}
 .people-names {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  padding-top: 30px;
   text-align: center;
 }
 .professions {
@@ -213,8 +217,7 @@ button {
   letter-spacing: 0.03em;
   line-height: 1.2;
   color: var(--light-gray);
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
   text-align: center;
 }
 .people-cards {
@@ -230,13 +233,12 @@ button {
 .filters {
   background-color: var(--very-light-gray-background);
   border: none;
-  padding: 6px 20px;
+  padding: 6px 26px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.6;
   color: var(--main-text-color);
-  margin-bottom: 50px;
   justify-content: center;
 }
 .filters:hover,
@@ -248,30 +250,29 @@ button {
 }
 .filters-list {
   justify-content: center;
-  gap: 0 8px;
+  gap: 8px;
   display: flex;
+  margin-bottom: 50px;
 }
 /* End buttons section */
 
 /* Projects section */
-.project-cards {
+.project-box {
   border-bottom: 1px var(--card-border-color) solid;
-  justify-content: center;
+  border-top: 0;
+  padding: 20px 24px;
 }
 .project-names {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
 }
 .project-categories {
   font-size: 16px;
   line-height: 1.9;
   color: var(--light-gray);
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
 /* End projects section */
 
@@ -289,7 +290,7 @@ button {
 /* Footer */
 .footer {
   background-color: var(--background-header-footer-color);
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 .white-studio {
   color: var(--secondary-color);
@@ -301,10 +302,7 @@ address {
   margin-top: 20px;
   font-style: normal;
 }
-.footer-list {
-  gap: 9px;
-}
-.footer-list:not(:last-child) {
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-social-links {
