@@ -258,7 +258,7 @@ button {
 
 /* Projects section */
 .project-box {
-  border-bottom: 1px var(--card-border-color) solid;
+  border: 1px var(--card-border-color) solid;
   border-top: 0;
   padding: 20px 24px;
 }
